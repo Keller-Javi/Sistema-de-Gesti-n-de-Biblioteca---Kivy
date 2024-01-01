@@ -1,0 +1,19 @@
+Proyecto: Sistema de Gestión de Biblioteca
+
+Requerimientos:
+
+Libro: Crea una clase Libro que tenga atributos como titulo, isbn, autor, y cantidad_disponible. Implementa métodos para obtener y modificar estos atributos.
+
+Biblioteca: Crea una clase Biblioteca que contenga una colección de libros. Implementa métodos para agregar un libro, eliminar un libro, buscar un libro por título o autor, y mostrar todos los libros disponibles.
+
+Prestamo: Implementa una clase Prestamo que modele el préstamo de un libro a un usuario. Debe tener atributos como libro, usuario, y fecha_prestamo. Agrega métodos para registrar la devolución del libro y calcular la duración del préstamo.
+
+Usuario: Crea una clase Usuario que tenga atributos como nombre_usuario, nombre, apellido, y libros_prestados. Implementa métodos para tomar prestado un libro, devolver un libro y ver los libros actualmente prestados.
+
+Interfaz de Usuario: Crea una interfaz simple (puede ser por consola) que permita a los usuarios interactuar con la biblioteca. Puedes implementar funciones como agregar libros, buscar libros, tomar prestado un libro, devolver un libro, etc.
+
+
+
+Implementar que introduciendo parte del nombre de un libro ya aparezca
+
+Guardado de los datos de la biblioteca, datos de los usuarios y el indexado
