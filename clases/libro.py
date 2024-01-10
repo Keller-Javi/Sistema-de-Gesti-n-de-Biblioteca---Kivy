@@ -9,5 +9,7 @@ class Libro():
         return f"{self.nombre} del autor: {self.autor}. Codigo: {self.isbn}"
     
     def __eq__(self, __value: object) -> bool:
-        return object.isbn == self.isbn
+        if isinstance(object, Libro):
+            return self.isbn == object.isbn
+        return False
             

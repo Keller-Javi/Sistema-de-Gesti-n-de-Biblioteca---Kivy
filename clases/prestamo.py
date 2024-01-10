@@ -9,11 +9,12 @@ class Prestamo():
         self.fecha_prestamo = datetime.now()
         self.fecha_devolucion = None
 
+    def __str__(self):
+        return f'Libro: {self.libro}, usuario: {self.usuario.nombre_usuario}'
+
     def devolución(self):
         self.fecha_devolucion = datetime.now()
 
-    def tiempo_prestamo(self):
-        ahora = datetime.now().day
-        tiempo_prestado = ahora - self.fecha_prestamo
+        tiempo_prestado = self.fecha_devolucion - self.fecha_prestamo
         return tiempo_prestado.days
     # retorna los dias de diferencia que hay entre el día del prestamo y el día actual 

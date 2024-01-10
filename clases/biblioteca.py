@@ -12,7 +12,7 @@ class Biblioteca():
     # En si no se elimina la instancia del libro pero como ninguna variable hace referencia a ese objeto, el recolector de basura va a librerar su memoria
 
     def buscar_libro_por_autor(self, autor):
-        return [libro for libro in self.libros.values() if libro.autor == autor]
+        return [libro for libro in self.libros.values() if libro.autor.upper() == autor.upper()]
 
     def buscar_libro_por_nombre(self, nombre):
         return [libro for libro in self.libros.values() if libro.nombre == nombre]
