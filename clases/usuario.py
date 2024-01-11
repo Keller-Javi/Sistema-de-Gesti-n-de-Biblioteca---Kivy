@@ -10,13 +10,12 @@ class Usuario():
     def __str__(self) -> str:
         return f'Nombre de usuario: {self.nombre_usuario}, de {self.apellido} {self.nombre}' 
     
-    def tomar_prestado_libro(self, libro):
-        self.libros_prestados.append(libro)
+    def tomar_libro_prestado(self, isbn):
+        self.libros_prestados.append(isbn)
 
-    def devolver_libro(self, libro):
-        if libro in self.libros_prestados:
-                self.libros_prestados.remove(libro) 
+    def devolver_libro(self, isbn):
+        if isbn in self.libros_prestados:
+                self.libros_prestados.remove(isbn) 
     
     def ver_libros_prestados(self):
-        for libro in self.libros_prestados:
-            print(libro)
+        return self.libros_prestados
