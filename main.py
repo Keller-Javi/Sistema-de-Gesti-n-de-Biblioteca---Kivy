@@ -114,13 +114,13 @@ def gestionar_prestamos(usuario):
             print('Otro. Volver')
             ops = input('Seleccione una opsión: ')
 
-            lista_libros = None # libros relacionados con la busqueda
+            lista_libros = [] # libros relacionados con la busqueda
             if ops == '1':
                 autor = input('Ingrese el autor del libro: ')
                 lista_libros = biblioteca.buscar_libros_por_autor(autor)
             elif ops == '2':
                 nombre = input('Ingrese el nombre del libro: ')
-                lista_libros = biblioteca.buscar_libros_por_autor(nombre)
+                lista_libros = biblioteca.buscar_libros_por_nombre(nombre)
             
             if lista_libros:
                 libro = None
